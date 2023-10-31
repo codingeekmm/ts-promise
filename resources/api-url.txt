@@ -1,0 +1,4 @@
+http://192.168.1.103:3000/api/orders/
+http://192.168.1.103:3000/api/orders/?customerName=Customer B&orderDate=2023-01-02
+http://192.168.1.103:3000/api/orders/summaries
+http://192.168.1.103:3000/api/orders/summaries?customerName=Customer A&orderDate=2023-01-01

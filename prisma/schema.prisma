@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Order {
+  id            String   @id @default(cuid())
+  customerName  String   @map("customer_name")
+  productId     String   @map("product_id")
+  productName   String   @map("product_name")
+  qty           Float
+  unit          String
+  orderDate     DateTime @map("order_date")
+  schoolType    String   @map("school_type")
+  dividePot     Int      @map("divide_pot")
+  cut           Int
+  conversionKg  Float    @map("conversion_kg")
+  conversionBag Int      @map("conversion_bag")
+
+  @@map("orders")
+}

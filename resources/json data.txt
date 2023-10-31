@@ -1,0 +1,23 @@
+{
+        "id": "clnybhtmc0000tm3kyq0pp6j3",
+        "customerName": "Customer A",
+        "productId": "P001",
+        "productName": "Product A1",
+        "qty": 1,
+        "unit": "kg",
+        "orderDate": "2023-01-01T00:00:00.000Z",
+        "schoolType": "small",
+        "dividePot": 1,
+        "cut": 1,
+        "conversionKg": 1,
+        "conversionBag": 1
+    }
+
+{
+        "_sum": {
+            "qty": 3,
+            "conversionBag": 3
+        },
+        "productName": "Product A1",
+        "orderDate": "2023-01-01T00:00:00.000Z"
+    },
